@@ -2,7 +2,7 @@
   "name": "mywebar-advanced-editor",
   "version": "0.121.1",
   "description": "",
-  "main": "build/three.js",
+  "main": "editor/index.html",
   "module": "build/three.module.js",
   "types": "src/Three.d.ts",
   "repository": {
@@ -115,8 +115,7 @@
     ],
     "directories": {}
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": "10.x"
   }
