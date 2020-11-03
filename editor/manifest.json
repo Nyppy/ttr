@@ -1,0 +1,14 @@
+{
+  "name": "Mywebar Advanced Editor",
+  "short_name": "Editor",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./images/icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
+}
