@@ -3,8 +3,6 @@
   "version": "0.121.1",
   "description": "",
   "main": "editor/index.html",
-  "module": "build/three.module.js",
-  "types": "src/Three.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/mrdoob/three.js"
@@ -55,7 +53,7 @@
     "start": "npm run dev && npm run open",
     "open": "concurrently \"http-server -a localhost -p 3000\" \"sleepms 1000 && open http://localhost:3000/editor\"",
     "test": "npm run test-lint && npm run test-unit",
-    "build": "rollup -c utils/build/rollup.config.js",
+    "build": "npm run start",
     "dev": "concurrently --names \"ROLLUP,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"rollup -c utils/build/rollup.config.js -w -m inline\" \"http-server -a localhost -p 3000\"",
     "dev-test": "concurrently --names \"ROLLUP,ROLLUPTEST,HTTP\" -c \"bgBlue.bold,bgRed.bold,bgGreen.bold\" \"rollup -c utils/build/rollup.config.js -w -m inline\" \"npm run dev --prefix test\" \"http-server -p 3000\"",
     "lint-fix": "eslint src --ext js --ext ts --fix && eslint examples/js/ --ext js --ext ts --ignore-pattern libs --fix",
